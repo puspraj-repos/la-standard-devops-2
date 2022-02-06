@@ -1,0 +1,17 @@
+{
+    "functionConnections": {
+        "azureFunctionOperation": {
+            "function": {
+                "id": "/subscriptions/af694cb4-39d4-4959-9aa1-7b30118743e7/resourceGroups/logicapps/providers/Microsoft.Web/sites/knighttest/functions/as2encode"
+            },
+            "triggerUrl": "https://knighttest.azurewebsites.net/api/as2encode",
+            "authentication": {
+                "type": "QueryString",
+                "name": "Code",
+                "value": "@appsetting('azureFunctionOperation_functionAppKey')"
+            },
+            "displayName": "azure-function"
+        }
+    },
+    "managedApiConnections": {}
+}
